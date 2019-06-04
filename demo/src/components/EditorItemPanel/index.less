@@ -1,0 +1,143 @@
+.itemPanel {
+  flex: 1;
+  background: #fff;
+
+  :global {
+    .ant-card {
+      background: #fff;
+    }
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > div {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.searchBoxWrapper{
+    width:100%;
+    background: #DDD;
+}
+
+.searchBox{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    color: #545863;
+
+    :focus{
+        border-top: unset;
+        box-shadow: unset;
+    }
+    :global{
+        .ant-input-search-icon{
+            font-size: 20px;
+        }
+    }
+    ::placeholder{
+        color: #545863;
+    }
+    input{
+        border: unset;
+        border-radius: 0;
+        border-bottom: 1px solid gray;
+        background: unset;
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+}
+
+.itemCard {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  user-select: none;
+  height: 55px;
+
+
+  :global {
+    .ant-card-body {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+}
+
+.category {
+    padding: 0;
+    border: unset;
+    font-size: 20px;
+
+    :global {
+        .ant-collapse-arrow{
+            font-size: 15px !important;
+        }
+        .ant-collapse-item{
+            border: unset;
+        }
+      .ant-collapse-header {
+          color: black !important;
+          background: white;
+          font-size: 20px;
+      }
+      .ant-collapse-content{
+          border-color: rgba(255, 0, 0, 0);
+      }
+      .ant-collapse-content-box {
+        padding:0;
+      }
+      .ant-card-body {
+          padding: 0;
+      }
+    }
+}
+
+
+.itemDrawer {
+    position: absolute;
+    top: 50px;
+
+    :global {
+        .ant-drawer-content-wrapper{
+            box-shadow: unset !important;
+        }
+        .ant-drawer-body {
+            padding: 0;
+        }
+        .ant-drawer-header {
+            border: unset;
+        }
+    }
+}
+
+
+
+.toggleButtonContainer {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 55px;
+    border-bottom: 1px solid #e6e9ed;
+    display: flex;
+    align-items: center;
+    width: 33px;
+    padding-left: 5px;
+    background: #DDD;
+    :global {
+      .ant-card-body {
+        padding: 0;
+      }
+    }
+}
+.toggleButton{
+    color: grey;
+    font-size: 20px;
+
+}

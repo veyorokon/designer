@@ -1,0 +1,90 @@
+.editor {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeef;
+
+}
+
+.editorHd {
+  padding: 8px;
+  border: 1px solid #e6e9ed;
+  background: white;
+  margin: 0 auto;
+  padding: 0;
+  height: 0;
+  z-index: 20;
+}
+
+.editorBd {
+  flex: 1;
+}
+
+.editorSidebar,
+.editorContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.editorSidebar {
+  background: #fff;
+
+  &:first-child {
+    border-right: 1px solid #e6e9ed;
+  }
+
+  &:last-child {
+    border-left: 1px solid #e6e9ed;
+  }
+}
+
+.koni {
+  flex: 1;
+  background-image:
+      linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient( rgba( 0, 0, 0, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-position: -2px -2px, -2px -2px, -1px -1px;
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  height: 0;
+}
+
+.pageHeader {
+    background: linear-gradient(45deg, #AF5740, #983B89);
+    height:50px;
+    width:100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    :global {
+        *>{
+            color:white;
+            padding: unset;
+        }
+        .ant-page-header-title-view{
+            display: flex;
+            align-items: center;
+        }
+        .ant-page-header-title-view-title{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .ant-page-header-title-view-sub-title{
+            font-size: 16px;
+        }
+        .ant-page-header-content-view{
+            display: flex;
+            flex: 1;
+            margin-left: 20px;
+            justify-content: space-between;
+            span>{
+                margin:0 20px;
+            }
+        }
+    }
+}
